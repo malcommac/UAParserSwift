@@ -114,7 +114,7 @@ public class UAParser {
 				}
 			case .rp(let key, let regexp, let replaceWith):
 				let newValue = element!.replace(withRegex: regexp, with: replaceWith)
-				data[key] = newValue
+				data[key] = newValue.lowercased()
 				break
 			}
 		}
@@ -417,7 +417,7 @@ internal struct Regexes {
 		],[.rf(.arch,"arm")]),
 		Rule([
 			"((?:ppc|powerpc)(?:64)?)(?:\\smac|;|\\))", // PowerPC
-		],[.rp(.arch,"ower/","")]),
+		],[.rp(.arch,"ower","")]),
 		Rule([
 			"(sun4\\w)[;\\)]", // SPARC
 		],[.rf(.arch,"sparc")]),

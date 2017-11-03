@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		52D6D9871BEFF229002C0205 /* UAParserSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6D97C1BEFF229002C0205 /* UAParserSwift.framework */; };
+		643640B51FACF6CF002C4859 /* cpu-test.json in Resources */ = {isa = PBXBuildFile; fileRef = 643640B41FACF6CF002C4859 /* cpu-test.json */; };
+		643640B61FACF6CF002C4859 /* cpu-test.json in Resources */ = {isa = PBXBuildFile; fileRef = 643640B41FACF6CF002C4859 /* cpu-test.json */; };
+		643640B71FACF6CF002C4859 /* cpu-test.json in Resources */ = {isa = PBXBuildFile; fileRef = 643640B41FACF6CF002C4859 /* cpu-test.json */; };
+		643640BD1FACFB25002C4859 /* engines-test.json in Resources */ = {isa = PBXBuildFile; fileRef = 643640BC1FACFB25002C4859 /* engines-test.json */; };
+		643640BE1FACFB25002C4859 /* engines-test.json in Resources */ = {isa = PBXBuildFile; fileRef = 643640BC1FACFB25002C4859 /* engines-test.json */; };
+		643640BF1FACFB25002C4859 /* engines-test.json in Resources */ = {isa = PBXBuildFile; fileRef = 643640BC1FACFB25002C4859 /* engines-test.json */; };
 		64CD6C331FAA2175009B4F9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CD6C321FAA2175009B4F9A /* AppDelegate.swift */; };
 		64CD6C351FAA2175009B4F9A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CD6C341FAA2175009B4F9A /* ViewController.swift */; };
 		64CD6C381FAA2175009B4F9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64CD6C361FAA2175009B4F9A /* Main.storyboard */; };
@@ -19,9 +25,9 @@
 		8933C7861EB5B820000D00A4 /* UAParserSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7841EB5B820000D00A4 /* UAParserSwift.swift */; };
 		8933C7871EB5B820000D00A4 /* UAParserSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7841EB5B820000D00A4 /* UAParserSwift.swift */; };
 		8933C7881EB5B820000D00A4 /* UAParserSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7841EB5B820000D00A4 /* UAParserSwift.swift */; };
-		8933C78E1EB5B82C000D00A4 /* UAParserSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7891EB5B82A000D00A4 /* UAParserSwiftTests.swift */; };
-		8933C78F1EB5B82C000D00A4 /* UAParserSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7891EB5B82A000D00A4 /* UAParserSwiftTests.swift */; };
-		8933C7901EB5B82D000D00A4 /* UAParserSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7891EB5B82A000D00A4 /* UAParserSwiftTests.swift */; };
+		8933C78E1EB5B82C000D00A4 /* UAParserSwift_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7891EB5B82A000D00A4 /* UAParserSwift_Tests.swift */; };
+		8933C78F1EB5B82C000D00A4 /* UAParserSwift_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7891EB5B82A000D00A4 /* UAParserSwift_Tests.swift */; };
+		8933C7901EB5B82D000D00A4 /* UAParserSwift_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7891EB5B82A000D00A4 /* UAParserSwift_Tests.swift */; };
 		DD7502881C68FEDE006590AF /* UAParserSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6DA0F1BF000BD002C0205 /* UAParserSwift.framework */; };
 		DD7502921C690C7A006590AF /* UAParserSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6D9F01BEFFFBE002C0205 /* UAParserSwift.framework */; };
 /* End PBXBuildFile section */
@@ -77,6 +83,8 @@
 		52D6D9E21BEFFF6E002C0205 /* UAParserSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UAParserSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D6D9F01BEFFFBE002C0205 /* UAParserSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UAParserSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D6DA0F1BF000BD002C0205 /* UAParserSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UAParserSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		643640B41FACF6CF002C4859 /* cpu-test.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "cpu-test.json"; sourceTree = "<group>"; };
+		643640BC1FACFB25002C4859 /* engines-test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "engines-test.json"; sourceTree = "<group>"; };
 		64CD6C301FAA2175009B4F9A /* TestApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64CD6C321FAA2175009B4F9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64CD6C341FAA2175009B4F9A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -85,7 +93,7 @@
 		64CD6C3C1FAA2175009B4F9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		64CD6C3E1FAA2175009B4F9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8933C7841EB5B820000D00A4 /* UAParserSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UAParserSwift.swift; sourceTree = "<group>"; };
-		8933C7891EB5B82A000D00A4 /* UAParserSwiftTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UAParserSwiftTests.swift; sourceTree = "<group>"; };
+		8933C7891EB5B82A000D00A4 /* UAParserSwift_Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UAParserSwift_Tests.swift; sourceTree = "<group>"; };
 		AD2FAA261CD0B6D800659CF4 /* UAParserSwift.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UAParserSwift.plist; sourceTree = "<group>"; };
 		AD2FAA281CD0B6E100659CF4 /* UAParserSwiftTests.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UAParserSwiftTests.plist; sourceTree = "<group>"; };
 		DD75027A1C68FCFC006590AF /* UAParserSwift-macOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UAParserSwift-macOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -223,7 +231,9 @@
 		8933C7831EB5B7EB000D00A4 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				8933C7891EB5B82A000D00A4 /* UAParserSwiftTests.swift */,
+				8933C7891EB5B82A000D00A4 /* UAParserSwift_Tests.swift */,
+				643640B41FACF6CF002C4859 /* cpu-test.json */,
+				643640BC1FACFB25002C4859 /* engines-test.json */,
 			);
 			name = Tests;
 			path = Tests/UAParserSwiftTests;
@@ -505,6 +515,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				643640B51FACF6CF002C4859 /* cpu-test.json in Resources */,
+				643640BD1FACFB25002C4859 /* engines-test.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,6 +555,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				643640B61FACF6CF002C4859 /* cpu-test.json in Resources */,
+				643640BE1FACFB25002C4859 /* engines-test.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,6 +564,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				643640B71FACF6CF002C4859 /* cpu-test.json in Resources */,
+				643640BF1FACFB25002C4859 /* engines-test.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -568,7 +584,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8933C7901EB5B82D000D00A4 /* UAParserSwiftTests.swift in Sources */,
+				8933C7901EB5B82D000D00A4 /* UAParserSwift_Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -609,7 +625,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8933C78F1EB5B82C000D00A4 /* UAParserSwiftTests.swift in Sources */,
+				8933C78F1EB5B82C000D00A4 /* UAParserSwift_Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -617,7 +633,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8933C78E1EB5B82C000D00A4 /* UAParserSwiftTests.swift in Sources */,
+				8933C78E1EB5B82C000D00A4 /* UAParserSwift_Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
