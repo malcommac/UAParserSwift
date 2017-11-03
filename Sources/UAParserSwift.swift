@@ -1,17 +1,17 @@
 //
-//  UAParserSwift
-//  Lightweight Swift-based User-Agent string parser
+//	UAParserSwift
+//	Lightweight Swift-based User-Agent string parser
 //
-//  ---------------------------------------------------
-//  Created by Daniele Margutti
+//	---------------------------------------------------
+//	Created by Daniele Margutti
 //		web: http://www.danielemargutti.com
 //		email: hello@danielemargutti.com
 //
-//  Copyright © 2017 Daniele Margutti.
+//	Copyright © 2017 Daniele Margutti.
 //	Dual licensed under GPLv2 & MIT
 //
 //	This is a port of ua-parser.js library in Swift
-//  Original JavaScript Version - Copyright © 2012-2016 Faisal Salman <fyzlman@gmail.com>
+//	Original JavaScript Version - Copyright © 2012-2016 Faisal Salman <fyzlman@gmail.com>
 //
 //	Permission is hereby granted, free of charge, to any person obtaining a copy
 //	of this software and associated documentation files (the "Software"), to deal
@@ -94,21 +94,26 @@ public class UAParser {
 	/// - Returns: parsed data array
 	private func map(results: [String], to functions: [Funcs]) -> ResultDictionary? {
 		var data : ResultDictionary = [:]
-		results.enumerated().forEach { (idx,element) in
-			switch functions[idx] {
+		functions.enumerated().forEach { (idx,function) in
+			let element: String? = (idx < results.count ? results[idx] : nil)
+			switch function {
 			case .r(let key):
 				data[key] = element
 			case .rf(let key, let value):
 				data[key] = value
 			case .mp(let key, let mapping):
+				let elementUppercased = element!.uppercased()
 				for item in mapping.map {
-					if item.value.contains(element.uppercased()) {
-						data[key] = item.key
-						break
+					for candidate in item.value {
+						if candidate.hasPrefix(elementUppercased) {
+							data[key] = item.key
+							break
+						}
 					}
+					if data[key] != nil { break }
 				}
 			case .rp(let key, let regexp, let replaceWith):
-				let newValue = element.replace(withRegex: regexp, with: replaceWith)
+				let newValue = element!.replace(withRegex: regexp, with: replaceWith)
 				data[key] = newValue
 				break
 			}
