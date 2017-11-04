@@ -119,7 +119,9 @@ public class UAParser {
 				}
 			case .rp(let key, let regexp, let replaceWith):
 				let newValue = element!.replace(withRegex: regexp, with: replaceWith)
-				data[key] = newValue.lowercased()
+				if newValue.count > 0 {
+					data[key] = newValue.lowercased()
+				}
 				break
 			}
 		}

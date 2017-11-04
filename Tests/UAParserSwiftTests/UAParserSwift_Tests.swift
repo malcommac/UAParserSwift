@@ -88,6 +88,30 @@ class UAParserSwiftTests: XCTestCase {
 			}
 		}
 	}
+	
+	func test_device() {
+		guard let tests = loadFile(named: "device-test") else {
+			XCTFail("No tests found")
+			return
+		}
+		for test in tests {
+			
+			let parser = UAParser(agent: test.ua)
+			let f_vendor = parser.device?.vendor?.lowercased()
+			let f_model = parser.device?.model?.lowercased()
+			let f_type = parser.device?.type?.lowercased()
+
+			let e_vendor = test.expect["vendor"]?.lowercased()
+			let e_model = test.expect["model"]?.lowercased()
+			let e_type = test.expect["type"]?.lowercased()
+
+			if 	f_vendor != e_vendor ||
+				f_model != e_model ||
+				f_type != e_type {
+				XCTFail("Failed to test device")
+			}
+		}
+	}
     
     static var allTests = [
         ("tests", test_cpu,test_engines,test_os),
