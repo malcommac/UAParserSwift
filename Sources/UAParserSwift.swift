@@ -99,16 +99,18 @@ public class UAParser {
 			switch function {
 			case .r(let key):
 				if element?.count ?? 0 > 0 {
-					data[key] = element!
+					data[key] = element!.trimmingCharacters(in: .whitespacesAndNewlines)
 				}
 			case .rf(let key, let value):
 				data[key] = value
 			case .mp(let key, let mapping):
-				let elementUppercased = element!.uppercased()
+				guard let value = element?.uppercased() else {
+					break
+				}
 				for item in mapping.map {
 					for candidate in item.value {
-						if elementUppercased.count > 0 && candidate.hasPrefix(elementUppercased) {
-							data[key] = item.key
+						if value.range(of: candidate, options: .caseInsensitive) != nil {
+							data[key] = item.key.trimmingCharacters(in: .whitespacesAndNewlines)
 							break
 						}
 					}
@@ -120,7 +122,7 @@ public class UAParser {
 			case .rp(let key, let regexp, let replaceWith):
 				let newValue = element!.replace(withRegex: regexp, with: replaceWith)
 				if newValue.count > 0 {
-					data[key] = newValue.lowercased()
+					data[key] = newValue.lowercased().trimmingCharacters(in: .whitespacesAndNewlines)
 				}
 				break
 			}
@@ -556,7 +558,7 @@ internal struct Regexes {
 		Rule([
 			"(maemo|nokia).*(n900|lumia\\s\\d+)", // Nokia
 			"(nokia)[\\s_-]?([\\w-]+)*",
-		],[.rf(.vendor,"nokia"),.r(.model),.rf(.type,"tablet")]),
+		],[.rf(.vendor,"nokia"),.r(.model),.rf(.type,"mobile")]),
 		Rule([
 			"android\\s3\\.[\\s\\w;-]{10}(a\\d{3})", // Acer
 		],[.r(.model),.rf(.vendor,"acer"),.rf(.type,"tablet")]),
@@ -646,13 +648,13 @@ internal struct Regexes {
 		],[.rf(.vendor,"dragon touch"),.r(.model),.rf(.type,"tablet")]),
 		Rule([
 			"android.+[;\\/]\\s*(NS-?.+)\\s+build", // Insignia Tablets
-		],[.r(.model),.rf(.vendor,"insigna"),.rf(.type,"tablet")]),
+		],[.r(.model),.rf(.vendor,"insignia"),.rf(.type,"tablet")]),
 		Rule([
 			"android.+[;\\/]\\s*((NX|Next)-?.+)\\s+build", // NextBook Tablets
 		],[.r(.model),.rf(.vendor,"nextbook"),.rf(.type,"tablet")]),
 		Rule([
 			"android.+[;\\/]\\s*(Xtreme\\_?)?(V(1[045]|2[015]|30|40|60|7[05]|90))\\s+build", // Voice Xtreme Phones
-		],[.rf(.vendor,"lvtel"),.r(.model),.rf(.type,"mobile")]),
+		],[.rf(.vendor,"voice"),.r(.model),.rf(.type,"mobile")]),
 		Rule([
 			"android.+[;\\/]\\s*(LVTEL\\-?)?(V1[12])\\s+build", // LvTel Phones
 		],[.rf(.vendor,"lvtel"),.r(.model),.rf(.type,"mobile")]),

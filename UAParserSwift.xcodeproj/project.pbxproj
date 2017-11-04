@@ -20,6 +20,9 @@
 		643640C51FADBDFC002C4859 /* device-test.json in Resources */ = {isa = PBXBuildFile; fileRef = 643640C41FADBDFC002C4859 /* device-test.json */; };
 		643640C61FADBDFC002C4859 /* device-test.json in Resources */ = {isa = PBXBuildFile; fileRef = 643640C41FADBDFC002C4859 /* device-test.json */; };
 		643640C71FADBDFC002C4859 /* device-test.json in Resources */ = {isa = PBXBuildFile; fileRef = 643640C41FADBDFC002C4859 /* device-test.json */; };
+		643640C91FADE74A002C4859 /* browser-test.json in Resources */ = {isa = PBXBuildFile; fileRef = 643640C81FADE74A002C4859 /* browser-test.json */; };
+		643640CA1FADE74A002C4859 /* browser-test.json in Resources */ = {isa = PBXBuildFile; fileRef = 643640C81FADE74A002C4859 /* browser-test.json */; };
+		643640CB1FADE74A002C4859 /* browser-test.json in Resources */ = {isa = PBXBuildFile; fileRef = 643640C81FADE74A002C4859 /* browser-test.json */; };
 		64CD6C331FAA2175009B4F9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CD6C321FAA2175009B4F9A /* AppDelegate.swift */; };
 		64CD6C351FAA2175009B4F9A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CD6C341FAA2175009B4F9A /* ViewController.swift */; };
 		64CD6C381FAA2175009B4F9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64CD6C361FAA2175009B4F9A /* Main.storyboard */; };
@@ -93,6 +96,7 @@
 		643640BC1FACFB25002C4859 /* engines-test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "engines-test.json"; sourceTree = "<group>"; };
 		643640C01FACFE28002C4859 /* os-test.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "os-test.json"; sourceTree = "<group>"; };
 		643640C41FADBDFC002C4859 /* device-test.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "device-test.json"; sourceTree = "<group>"; };
+		643640C81FADE74A002C4859 /* browser-test.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "browser-test.json"; sourceTree = "<group>"; };
 		64CD6C301FAA2175009B4F9A /* TestApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64CD6C321FAA2175009B4F9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64CD6C341FAA2175009B4F9A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -244,6 +248,7 @@
 				643640BC1FACFB25002C4859 /* engines-test.json */,
 				643640C01FACFE28002C4859 /* os-test.json */,
 				643640C41FADBDFC002C4859 /* device-test.json */,
+				643640C81FADE74A002C4859 /* browser-test.json */,
 			);
 			name = Tests;
 			path = Tests/UAParserSwiftTests;
@@ -529,6 +534,7 @@
 				643640B51FACF6CF002C4859 /* cpu-test.json in Resources */,
 				643640BD1FACFB25002C4859 /* engines-test.json in Resources */,
 				643640C11FACFE28002C4859 /* os-test.json in Resources */,
+				643640C91FADE74A002C4859 /* browser-test.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -571,6 +577,7 @@
 				643640B61FACF6CF002C4859 /* cpu-test.json in Resources */,
 				643640BE1FACFB25002C4859 /* engines-test.json in Resources */,
 				643640C21FACFE28002C4859 /* os-test.json in Resources */,
+				643640CA1FADE74A002C4859 /* browser-test.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,6 +589,7 @@
 				643640B71FACF6CF002C4859 /* cpu-test.json in Resources */,
 				643640BF1FACFB25002C4859 /* engines-test.json in Resources */,
 				643640C31FACFE28002C4859 /* os-test.json in Resources */,
+				643640CB1FADE74A002C4859 /* browser-test.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

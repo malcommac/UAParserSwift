@@ -112,8 +112,29 @@ class UAParserSwiftTests: XCTestCase {
 			}
 		}
 	}
+	
+	func test_browser() {
+		guard let tests = loadFile(named: "browser-test") else {
+			XCTFail("No tests found")
+			return
+		}
+		for test in tests {
+			
+			let parser = UAParser(agent: test.ua)
+			let f_name = parser.browser?.name?.lowercased()
+			let f_version = parser.browser?.version?.lowercased()
+			
+			let e_name = test.expect["name"]?.lowercased()
+			let e_version = test.expect["version"]?.lowercased()
+			
+			if 	f_name != e_name ||
+				f_version != e_version {
+				XCTFail("Failed to test device")
+			}
+		}
+	}
     
     static var allTests = [
-        ("tests", test_cpu,test_engines,test_os),
+        ("tests", test_cpu,test_engines,test_os,test_device),
     ]
 }

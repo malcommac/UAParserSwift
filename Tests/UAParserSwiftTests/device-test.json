@@ -24,10 +24,10 @@
 },
 {
     "desc": "HTC Evo Shift 4G",
-    "ua": "Mozilla/5.0 (Linux; U; Android 2.3.4; en-us; Sprint APA7373KT Build/GRJ22) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0",
+    "ua": "Mozilla/5.0 (Linux; U; Android 2.3.4; en-us; HTC APA7373KT Build/GRJ22) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0",
     "expect": {
         "vendor": "HTC",
-        "model": "Evo Shift 4G",
+        "model": "APA7373KT",
         "type": "mobile"
     }
 },
@@ -270,7 +270,7 @@
     "ua": "HbbTV/1.1.1 (;;;;;) Maple;2011",
     "expect": {
         "vendor": "Samsung",
-        "model": "SmartTV2011",
+        "model": "2011",
         "type": "smarttv"
     }
 },
@@ -520,7 +520,7 @@
     "desc": "Generic Android Device",
     "ua": "Mozilla/5.0  (Linux; U; Android 6.0.1; i980 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36",
     "expect": {
-        "vendor": "Generic",
+        "vendor": "generic",
         "model": "Android 6.0.1"
     }
 },
@@ -789,9 +789,8 @@
     "desc": "Gigaset Tablet",
     "ua": "Mozilla/5.0 (Linux; Android 4.2.2; Gigaset QV830 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36",
     "expect": {
-        "vendor": "Gigaset",
-        "model": "QV830",
-        "type": "tablet"
+        "vendor": "generic",
+        "model": "Android 4.2.2"
     }
 },
 {
