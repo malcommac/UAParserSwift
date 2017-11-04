@@ -14,6 +14,9 @@
 		643640BD1FACFB25002C4859 /* engines-test.json in Resources */ = {isa = PBXBuildFile; fileRef = 643640BC1FACFB25002C4859 /* engines-test.json */; };
 		643640BE1FACFB25002C4859 /* engines-test.json in Resources */ = {isa = PBXBuildFile; fileRef = 643640BC1FACFB25002C4859 /* engines-test.json */; };
 		643640BF1FACFB25002C4859 /* engines-test.json in Resources */ = {isa = PBXBuildFile; fileRef = 643640BC1FACFB25002C4859 /* engines-test.json */; };
+		643640C11FACFE28002C4859 /* os-test.json in Resources */ = {isa = PBXBuildFile; fileRef = 643640C01FACFE28002C4859 /* os-test.json */; };
+		643640C21FACFE28002C4859 /* os-test.json in Resources */ = {isa = PBXBuildFile; fileRef = 643640C01FACFE28002C4859 /* os-test.json */; };
+		643640C31FACFE28002C4859 /* os-test.json in Resources */ = {isa = PBXBuildFile; fileRef = 643640C01FACFE28002C4859 /* os-test.json */; };
 		64CD6C331FAA2175009B4F9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CD6C321FAA2175009B4F9A /* AppDelegate.swift */; };
 		64CD6C351FAA2175009B4F9A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CD6C341FAA2175009B4F9A /* ViewController.swift */; };
 		64CD6C381FAA2175009B4F9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64CD6C361FAA2175009B4F9A /* Main.storyboard */; };
@@ -85,6 +88,7 @@
 		52D6DA0F1BF000BD002C0205 /* UAParserSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UAParserSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		643640B41FACF6CF002C4859 /* cpu-test.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "cpu-test.json"; sourceTree = "<group>"; };
 		643640BC1FACFB25002C4859 /* engines-test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "engines-test.json"; sourceTree = "<group>"; };
+		643640C01FACFE28002C4859 /* os-test.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "os-test.json"; sourceTree = "<group>"; };
 		64CD6C301FAA2175009B4F9A /* TestApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64CD6C321FAA2175009B4F9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64CD6C341FAA2175009B4F9A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -234,6 +238,7 @@
 				8933C7891EB5B82A000D00A4 /* UAParserSwift_Tests.swift */,
 				643640B41FACF6CF002C4859 /* cpu-test.json */,
 				643640BC1FACFB25002C4859 /* engines-test.json */,
+				643640C01FACFE28002C4859 /* os-test.json */,
 			);
 			name = Tests;
 			path = Tests/UAParserSwiftTests;
@@ -517,6 +522,7 @@
 			files = (
 				643640B51FACF6CF002C4859 /* cpu-test.json in Resources */,
 				643640BD1FACFB25002C4859 /* engines-test.json in Resources */,
+				643640C11FACFE28002C4859 /* os-test.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -557,6 +563,7 @@
 			files = (
 				643640B61FACF6CF002C4859 /* cpu-test.json in Resources */,
 				643640BE1FACFB25002C4859 /* engines-test.json in Resources */,
+				643640C21FACFE28002C4859 /* os-test.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -566,6 +573,7 @@
 			files = (
 				643640B71FACF6CF002C4859 /* cpu-test.json in Resources */,
 				643640BF1FACFB25002C4859 /* engines-test.json in Resources */,
+				643640C31FACFE28002C4859 /* os-test.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

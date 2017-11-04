@@ -98,19 +98,24 @@ public class UAParser {
 			let element: String? = (idx < results.count ? results[idx] : nil)
 			switch function {
 			case .r(let key):
-				data[key] = element
+				if element?.count ?? 0 > 0 {
+					data[key] = element!
+				}
 			case .rf(let key, let value):
 				data[key] = value
 			case .mp(let key, let mapping):
 				let elementUppercased = element!.uppercased()
 				for item in mapping.map {
 					for candidate in item.value {
-						if candidate.hasPrefix(elementUppercased) {
+						if elementUppercased.count > 0 && candidate.hasPrefix(elementUppercased) {
 							data[key] = item.key
 							break
 						}
 					}
 					if data[key] != nil { break }
+				}
+				if data[key] == nil && element?.count ?? 0 > 0 {
+					data[key] = element!
 				}
 			case .rp(let key, let regexp, let replaceWith):
 				let newValue = element!.replace(withRegex: regexp, with: replaceWith)
@@ -689,7 +694,10 @@ internal struct Regexes {
 			"(webkit|trident|netfront|netsurf|amaya|lynx|w3m)\\/([\\w\\.]+)", // WebKit/Trident/NetFront/NetSurf/Amaya/Lynx/w3m
 			"(khtml|tasman|links)[\\/\\s]\\(?([\\w\\.]+)", // KHTML/Tasman/Links
 			"(icab)[\\/\\s]([23]\\.[\\d\\.]+)" // iCab
-		],[.r(.name),.r(.version)])
+		],[.r(.name),.r(.version)]),
+		Rule([
+			"rv\\:([\\w\\.]+).*(gecko)"	// Gecko
+		],[.r(.version),.r(.name)]),
 	]
 	
 	/// Operating Systems
@@ -703,6 +711,9 @@ internal struct Regexes {
 			"(windows\\sphone(?:\\sos)*)[\\s\\/]?([\\d\\.\\s]+\\w)*", // Windows Phone
 			"(windows\\smobile|windows)[\\s\\/]?([ntce\\d\\.\\s]+\\w)"
 		],[.r(.name),.mp(.version,WindowsOSMap())]),
+		Rule([
+			"(win(?=3|9|n)|win\\s9x\\s)([nt\\d\\.]+)", // Windows
+		],[.rf(.name,"windows"),.mp(.version,WindowsOSMap())]),
 		Rule([
 			// Mobile/Embedded OS
 			"\\((bb)(10);" // BlackBerry 10
@@ -847,7 +858,9 @@ public extension String {
 	/// - Parameter regex: regular express used to filter
 	/// - Returns: matching strings
 	func matchingStrings(regex: String) -> [String]? {
-		guard let regex = try? NSRegularExpression(pattern: regex, options: [.caseInsensitive]) else { return [] }
+		guard let regex = try? NSRegularExpression(pattern: regex, options: [.caseInsensitive]) else {
+			return nil
+		}
 		let nsString = self as NSString
 		let results  = regex.matches(in: self, options: [], range: NSMakeRange(0, nsString.length))
 		let matches = results.map { result in
@@ -857,7 +870,8 @@ public extension String {
 			}
 		}
 		// we are working only with the first matching group and inside with all sub strings (the first one is the group itself)
-		return matches.count > 0 ? Array(matches.first![1...]) : nil
+		guard let first_group = matches.first else { return nil }
+		return first_group.count > 1 ? Array(first_group[1...]) : first_group
 	}
 	
 	/// Replace string matching given regex with passed string
