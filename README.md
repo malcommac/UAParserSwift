@@ -56,6 +56,16 @@ Usage of UAParserSwift is pretty simple; just allocate an `UAParser` object alon
 
 ```swift
 let parser = UAParser(agent: "Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_0 like Mac OS X; en-us) AppleWebKit/532.9 (KHTML, like Gecko) Version/4.0.5 Mobile/8A293 Safari/6531.22.7")
+
+// Then call properties you want to read.
+// Parsed data are cached and evaluated lazily in order to
+// get the best performances.
+
+let identified_os = parser.os
+let identified_device = parser.device
+let identified_engine = parser.engine
+let identified_os = parser.os
+let identified_cpu = parser.cpu
 ```
 
 Now you can call one of these properties to get parsed data (all properties are lazy created in order to keep parser lightweight):
