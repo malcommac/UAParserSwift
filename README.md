@@ -176,7 +176,7 @@ This is the official way to install packages for Swift Server Side.
 In your Package.swift, add the following to your dependencies array:
 
 ```swift
-.package(url: "https://github.com/malcommac/UAParserSwift.git", from: "1.0.0")
+.package(url: "https://github.com/malcommac/UAParserSwift.git", from: "1.0.1")
 ```
 
 To your target, add the "UAParserSwift" dependency.
