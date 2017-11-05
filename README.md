@@ -176,7 +176,7 @@ This is the official way to install packages for Swift Server Side.
 In your Package.swift, add the following to your dependencies array:
 
 ```swift
-.package(url: "https://github.com/malcommac/UAParserSwift.git", from: "0.0.0")
+.package(url: "https://github.com/malcommac/UAParserSwift.git", from: "1.0.0")
 ```
 
 To your target, add the "UAParserSwift" dependency.
@@ -184,6 +184,8 @@ To your target, add the "UAParserSwift" dependency.
 ```swift
 .target(name: "Application", dependencies: ["UAParserSwift", ...])
 ```
+
+
 
 #### Using [CocoaPods](http://cocoapods.org) - Client Side
 
@@ -193,6 +195,8 @@ To your target, add the "UAParserSwift" dependency.
 pod 'UAParserSwift'
 ```
 Run `pod install` from Terminal, then open your app's `.xcworkspace` file to launch Xcode.
+
+
 
 #### Using [Carthage](https://github.com/Carthage/Carthage) - Client Side
 
