@@ -37,18 +37,20 @@ Take a look below:
 
 ### Contents
 
-* Documentation
-* Supported Browsers
-* Supported Devices
-* Supported Engines
-* Supported OSs
-* Supported Architectures
+* [How to use UAParserSwift](#doc)
+* [Supported Browsers](#browsers)
+* [Supported Devices](#devices)
+* [Supported Engines](#engines)
+* [Supported OSs](#oss)
+* [Supported Architectures](#architectures)
 
-* Unit Tests
-* Installation
-* License
+* [Unit Tests](#tests)
+* [Installation](#installation)
+* [License](#license)
 
-### Documentation
+<a name="doc"/>
+
+### How to use UAParserSwift
 
 Usage of UAParserSwift is pretty simple; just allocate an `UAParser` object along with the `User-Agent` string you want to parse.
 
@@ -64,6 +66,7 @@ Now you can call one of these properties to get parsed data (all properties are 
 * `.os`: return an `OS` object with the information about host operation system: `name`,`version`
 * `.cpu`: return a `CPU` object with the informations about host's device architecture: `identifier`
 
+<a name="browsers"/>
 
 ### Supported Browsers
 
@@ -81,6 +84,8 @@ SlimBrowser, Swiftfox, Tizen, UCBrowser, Vivaldi, w3m, WeChat, Yandex
 
 **Version**:
 Determined dynamically
+
+<a name="devices"/>
 
 ### Supported Devices
 
@@ -102,6 +107,8 @@ Samsung, Sharp, Siemens, Sony[Ericsson], Sprint, Xbox, Xiaomi, ZTE
 **Model**:
 Determined dinamically
 
+<a name="engines"/>
+
 ### Supported Engines
 
 **Engine**:
@@ -113,6 +120,8 @@ Tasman, Trident, w3m, WebKit
 
 **Engine Version**:
 Determined dinamically
+
+<a name="oss"/>
 
 ### Supported OSs
 
@@ -129,6 +138,8 @@ Ubuntu, UNIX, VectorLinux, WebOS, Windows [Phone/Mobile], Zenwalk
 **Version**:
 Determined dinamically
 
+<a name="architectures"/>
+
 ### Supported Architectures
 
 **Identifier**:
@@ -136,13 +147,59 @@ Determined dinamically
 68k, amd64, arm[64], avr, ia[32/64], irix[64], mips[64], pa-risc, ppc, sparc[64]
 ```
 
+<a name="tests"/>
+
 ### Unit Tests
 
 Unit Tests are available under the [`Tests`](https://github.com/malcommac/UAParserSwift/tree/master/Tests) directory; actually they are the same tests available for ua-parser-js and all are passed successfully.
 
+<a name="installation"/>
+
 ### Installation
 
+This library is written for Swift 4.x.
 
+#### Swift Package Manager - Swift Server Side (Kitura,Vapor...)
+
+Meow requires Swift 4.0 or greater to work.
+This is the official way to install packages for Swift Server Side.
+In your Package.swift, add the following to your dependencies array:
+
+```swift
+.package(url: "https://github.com/malcommac/UAParserSwift.git", from: "0.0.0")
+```
+
+To your target, add the "UAParserSwift" dependency.
+
+```swift
+.target(name: "Application", dependencies: ["UAParserSwift", ...])
+```
+
+#### Using [CocoaPods](http://cocoapods.org) - Client Side
+
+1.	Add the pod `UAParserSwift` to your [Podfile](http://guides.cocoapods.org/using/the-podfile.html).
+
+```ruby
+pod 'UAParserSwift'
+```
+Run `pod install` from Terminal, then open your app's `.xcworkspace` file to launch Xcode.
+
+#### Using [Carthage](https://github.com/Carthage/Carthage) - Client Side
+
+1. Add the `malcommac/UAParserSwift` project to your [Cartfile](https://github.com/Carthage/Carthage/blob/master/Documentation/Artifacts.md#cartfile).
+
+```ogdl
+github "malcommac/UAParserSwift"
+```
+
+<a name="issues"/>
+
+### Issues & Contributions
+
+Please [open an issue here on GitHub](https://github.com/malcommac/UAParserSwift/issues/new) if you have a problem, suggestion, or other comment.
+Pull requests are welcome and encouraged.
+
+<a name="license"/>
 
 ### License
 
