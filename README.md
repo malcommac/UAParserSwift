@@ -1,5 +1,5 @@
 <p align="center" >
-<img src="https://raw.githubusercontent.com/malcommac/UAParserSwift/master/logo.png" width=530px alt="UAParserSwift" title="UAParserSwift">
+<img src="https://raw.githubusercontent.com/malcommac/UAParserSwift/master/logo-uaparserswift.png" width=530px alt="UAParserSwift" title="UAParserSwift">
 </p>
 
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![CI Status](https://travis-ci.org/malcommac/UAParserSwift.svg)](https://travis-ci.org/malcommac/UAParserSwift) [![Version](https://img.shields.io/cocoapods/v/UAParserSwift.svg?style=flat)](http://cocoadocs.org/docsets/UAParserSwift) [![License](https://img.shields.io/cocoapods/l/UAParserSwift.svg?style=flat)](http://cocoadocs.org/docsets/UAParserSwift) [![Platform](https://img.shields.io/cocoapods/p/UAParserSwift.svg?style=flat)](http://cocoadocs.org/docsets/UAParserSwift)
