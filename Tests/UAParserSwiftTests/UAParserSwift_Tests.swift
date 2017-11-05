@@ -135,6 +135,6 @@ class UAParserSwiftTests: XCTestCase {
 	}
     
     static var allTests = [
-        ("tests", test_cpu,test_engines,test_os,test_device),
+        ("tests", test_cpu,test_engines,test_os,test_device,test_browser),
     ]
 }

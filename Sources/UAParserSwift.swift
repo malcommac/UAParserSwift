@@ -345,7 +345,7 @@ internal struct Regexes {
 		], [.r(.name),.r(.version)]),
 		Rule([
 			"xiaomi\\/miuibrowser\\/([\\w\\.]+)", // MIUI Browser
-		], [.r(.version), .rf(.name,"MIU Browser")]),
+		], [.r(.version), .rf(.name,"MIUI Browser")]),
 		Rule([
 			";fbav\\/([\\w\\.]+);", // Facebook App for iOS & Android
 		], [.r(.version), .rf(.name,"Facebook")]),
