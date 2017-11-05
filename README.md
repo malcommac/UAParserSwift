@@ -4,8 +4,8 @@
 
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![CI Status](https://travis-ci.org/malcommac/UAParserSwift.svg)](https://travis-ci.org/malcommac/UAParserSwift) [![Version](https://img.shields.io/cocoapods/v/UAParserSwift.svg?style=flat)](http://cocoadocs.org/docsets/UAParserSwift) [![License](https://img.shields.io/cocoapods/l/UAParserSwift.svg?style=flat)](http://cocoadocs.org/docsets/UAParserSwift) [![Platform](https://img.shields.io/cocoapods/p/UAParserSwift.svg?style=flat)](http://cocoadocs.org/docsets/UAParserSwift)
 
-<p align="center" >Identify browser, engine, OS, CPU and device/type model<br/>
-Made with ♥ for Swift Server Side
+<p align="center" >Identify Browser, Engine, OS, CPU and Device Type/Model<br/>
+Made with ♥ for Swift Server Side (Kitura, Vapor, Perfect...)
 <p/>
 <p align="center" >★★ <b>Star our github repository to help us!</b> ★★</p>
 <p align="center" >Created by <a href="http://www.danielemargutti.com">Daniele Margutti</a> (<a href="http://www.twitter.com/danielemargutti">@danielemargutti</a>)</p>
