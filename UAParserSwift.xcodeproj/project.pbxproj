@@ -23,6 +23,10 @@
 		643640C91FADE74A002C4859 /* browser-test.json in Resources */ = {isa = PBXBuildFile; fileRef = 643640C81FADE74A002C4859 /* browser-test.json */; };
 		643640CA1FADE74A002C4859 /* browser-test.json in Resources */ = {isa = PBXBuildFile; fileRef = 643640C81FADE74A002C4859 /* browser-test.json */; };
 		643640CB1FADE74A002C4859 /* browser-test.json in Resources */ = {isa = PBXBuildFile; fileRef = 643640C81FADE74A002C4859 /* browser-test.json */; };
+		64C2F9FF1FAF849C00E3EEDC /* UAParserSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C2F9FE1FAF849C00E3EEDC /* UAParserSwift.swift */; };
+		64C2FA001FAF849C00E3EEDC /* UAParserSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C2F9FE1FAF849C00E3EEDC /* UAParserSwift.swift */; };
+		64C2FA011FAF849C00E3EEDC /* UAParserSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C2F9FE1FAF849C00E3EEDC /* UAParserSwift.swift */; };
+		64C2FA021FAF849C00E3EEDC /* UAParserSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C2F9FE1FAF849C00E3EEDC /* UAParserSwift.swift */; };
 		64CD6C331FAA2175009B4F9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CD6C321FAA2175009B4F9A /* AppDelegate.swift */; };
 		64CD6C351FAA2175009B4F9A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CD6C341FAA2175009B4F9A /* ViewController.swift */; };
 		64CD6C381FAA2175009B4F9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64CD6C361FAA2175009B4F9A /* Main.storyboard */; };
@@ -30,10 +34,6 @@
 		64CD6C3D1FAA2175009B4F9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64CD6C3B1FAA2175009B4F9A /* LaunchScreen.storyboard */; };
 		64CD6C451FAA2181009B4F9A /* UAParserSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6D97C1BEFF229002C0205 /* UAParserSwift.framework */; };
 		64CD6C471FAA218E009B4F9A /* UAParserSwift.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6D97C1BEFF229002C0205 /* UAParserSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		8933C7851EB5B820000D00A4 /* UAParserSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7841EB5B820000D00A4 /* UAParserSwift.swift */; };
-		8933C7861EB5B820000D00A4 /* UAParserSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7841EB5B820000D00A4 /* UAParserSwift.swift */; };
-		8933C7871EB5B820000D00A4 /* UAParserSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7841EB5B820000D00A4 /* UAParserSwift.swift */; };
-		8933C7881EB5B820000D00A4 /* UAParserSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7841EB5B820000D00A4 /* UAParserSwift.swift */; };
 		8933C78E1EB5B82C000D00A4 /* UAParserSwift_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7891EB5B82A000D00A4 /* UAParserSwift_Tests.swift */; };
 		8933C78F1EB5B82C000D00A4 /* UAParserSwift_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7891EB5B82A000D00A4 /* UAParserSwift_Tests.swift */; };
 		8933C7901EB5B82D000D00A4 /* UAParserSwift_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7891EB5B82A000D00A4 /* UAParserSwift_Tests.swift */; };
@@ -97,6 +97,7 @@
 		643640C01FACFE28002C4859 /* os-test.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "os-test.json"; sourceTree = "<group>"; };
 		643640C41FADBDFC002C4859 /* device-test.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "device-test.json"; sourceTree = "<group>"; };
 		643640C81FADE74A002C4859 /* browser-test.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "browser-test.json"; sourceTree = "<group>"; };
+		64C2F9FE1FAF849C00E3EEDC /* UAParserSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UAParserSwift.swift; path = UAParserSwift/UAParserSwift.swift; sourceTree = "<group>"; };
 		64CD6C301FAA2175009B4F9A /* TestApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64CD6C321FAA2175009B4F9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64CD6C341FAA2175009B4F9A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -104,7 +105,6 @@
 		64CD6C391FAA2175009B4F9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64CD6C3C1FAA2175009B4F9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		64CD6C3E1FAA2175009B4F9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8933C7841EB5B820000D00A4 /* UAParserSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UAParserSwift.swift; sourceTree = "<group>"; };
 		8933C7891EB5B82A000D00A4 /* UAParserSwift_Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UAParserSwift_Tests.swift; sourceTree = "<group>"; };
 		AD2FAA261CD0B6D800659CF4 /* UAParserSwift.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UAParserSwift.plist; sourceTree = "<group>"; };
 		AD2FAA281CD0B6E100659CF4 /* UAParserSwiftTests.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UAParserSwiftTests.plist; sourceTree = "<group>"; };
@@ -235,7 +235,7 @@
 		8933C7811EB5B7E0000D00A4 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				8933C7841EB5B820000D00A4 /* UAParserSwift.swift */,
+				64C2F9FE1FAF849C00E3EEDC /* UAParserSwift.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -461,7 +461,7 @@
 				TargetAttributes = {
 					52D6D97B1BEFF229002C0205 = {
 						CreatedOnToolsVersion = 7.1;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0910;
 					};
 					52D6D9851BEFF229002C0205 = {
 						CreatedOnToolsVersion = 7.1;
@@ -469,15 +469,15 @@
 					};
 					52D6D9E11BEFFF6E002C0205 = {
 						CreatedOnToolsVersion = 7.1;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0910;
 					};
 					52D6D9EF1BEFFFBE002C0205 = {
 						CreatedOnToolsVersion = 7.1;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0910;
 					};
 					52D6DA0E1BF000BD002C0205 = {
 						CreatedOnToolsVersion = 7.1;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0910;
 					};
 					64CD6C2F1FAA2175009B4F9A = {
 						CreatedOnToolsVersion = 9.1;
@@ -600,7 +600,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8933C7851EB5B820000D00A4 /* UAParserSwift.swift in Sources */,
+				64C2F9FF1FAF849C00E3EEDC /* UAParserSwift.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -616,7 +616,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8933C7871EB5B820000D00A4 /* UAParserSwift.swift in Sources */,
+				64C2FA011FAF849C00E3EEDC /* UAParserSwift.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -624,7 +624,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8933C7881EB5B820000D00A4 /* UAParserSwift.swift in Sources */,
+				64C2FA021FAF849C00E3EEDC /* UAParserSwift.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -632,7 +632,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8933C7861EB5B820000D00A4 /* UAParserSwift.swift in Sources */,
+				64C2FA001FAF849C00E3EEDC /* UAParserSwift.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -861,6 +861,7 @@
 		52D6D9941BEFF229002C0205 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Configs/UAParserSwiftTests.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -874,6 +875,7 @@
 		52D6D9951BEFF229002C0205 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Configs/UAParserSwiftTests.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -888,6 +890,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -900,6 +903,7 @@
 				PRODUCT_NAME = UAParserSwift;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
@@ -910,6 +914,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -933,6 +938,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -945,6 +951,7 @@
 				PRODUCT_NAME = UAParserSwift;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
@@ -955,6 +962,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -978,6 +986,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -993,6 +1002,7 @@
 				PRODUCT_NAME = UAParserSwift;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -1001,6 +1011,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -1024,6 +1035,7 @@
 		64CD6C3F1FAA2175009B4F9A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -1048,6 +1060,7 @@
 		64CD6C401FAA2175009B4F9A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -1072,6 +1085,7 @@
 		DD7502831C68FCFC006590AF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Configs/UAParserSwiftTests.plist;
@@ -1087,6 +1101,7 @@
 		DD7502841C68FCFC006590AF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Configs/UAParserSwiftTests.plist;
@@ -1103,6 +1118,7 @@
 		DD7502961C690C7A006590AF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = Configs/UAParserSwiftTests.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.UAParserSwift.UAParserSwift-tvOS-Tests";
@@ -1116,6 +1132,7 @@
 		DD7502971C690C7A006590AF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = Configs/UAParserSwiftTests.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.UAParserSwift.UAParserSwift-tvOS-Tests";
