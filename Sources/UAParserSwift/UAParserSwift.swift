@@ -865,7 +865,7 @@ public extension String {
 		guard let regex = try? NSRegularExpression(pattern: regex, options: [.caseInsensitive]) else {
 			return nil
 		}
-		let nsString = self as NSString
+		let nsString = NSString(string: self)
 		let results  = regex.matches(in: self, options: [], range: NSMakeRange(0, nsString.length))
 		let matches = results.map { result in
 			(0..<result.numberOfRanges).map { result.range(at: $0).location != NSNotFound
