@@ -27,7 +27,7 @@ class UAParserSwiftTests: XCTestCase {
 			let decoder = JSONDecoder()
 			let data = try decoder.decode([TestItem].self, from: jsonData)
 			return data
-		} catch let err {
+		} catch {
 			return nil
 		}
 	}
@@ -135,6 +135,10 @@ class UAParserSwiftTests: XCTestCase {
 	}
     
     static var allTests = [
-        ("tests", test_cpu,test_engines,test_os,test_device,test_browser),
+        ("test_cpu", test_cpu),
+        ("test_engines", test_engines),
+        ("test_os", test_os),
+        ("test_device", test_device),
+        ("test_browser", test_browser),
     ]
 }
