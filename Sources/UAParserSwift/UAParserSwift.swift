@@ -137,7 +137,7 @@ public class UAParser {
 internal struct Rule {
 	
 	/// Set of regular expressions which can validate the rule
-	public private(set) var regexp: [String]
+	public private(set) var regexp: [NSRegularExpression]
 	
 	/// Function to execute to parse given regexp results in a valid dictionary
 	public private(set) var funcs: [Funcs]
@@ -148,7 +148,10 @@ internal struct Rule {
 	///   - regexp: regular expressions
 	///   - funcs: function to parse matched regular expression substrings
 	public init(_ regexp: [String], _ funcs: [Funcs]) {
-		self.regexp = regexp
+		self.regexp = regexp.map { (regex) in
+			try! NSRegularExpression(pattern: regex, options: [.caseInsensitive])
+		}
+
 		self.funcs = funcs
 	}
 	
@@ -861,10 +864,7 @@ public extension String {
 	///
 	/// - Parameter regex: regular express used to filter
 	/// - Returns: matching strings
-	func matchingStrings(regex: String) -> [String]? {
-		guard let regex = try? NSRegularExpression(pattern: regex, options: [.caseInsensitive]) else {
-			return nil
-		}
+	func matchingStrings(regex: NSRegularExpression) -> [String]? {
 		let nsString = NSString(string: self)
 		let results  = regex.matches(in: self, options: [], range: NSMakeRange(0, nsString.length))
 		let matches = results.map { result in
