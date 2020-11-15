@@ -1,43 +1,29 @@
 <p align="center" >
-<img src="https://raw.githubusercontent.com/malcommac/UAParserSwift/master/logo-uaparserswift.png" width=530px alt="UAParserSwift" title="UAParserSwift">
+  <img src="banner.png" width=300px alt="UAParserSwift" title="UAParserSwift">
 </p>
 
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![CI Status](https://travis-ci.org/malcommac/UAParserSwift.svg)](https://travis-ci.org/malcommac/UAParserSwift) [![Version](https://img.shields.io/cocoapods/v/UAParserSwift.svg?style=flat)](http://cocoadocs.org/docsets/UAParserSwift) [![License](https://img.shields.io/cocoapods/l/UAParserSwift.svg?style=flat)](http://cocoadocs.org/docsets/UAParserSwift) [![Platform](https://img.shields.io/cocoapods/p/UAParserSwift.svg?style=flat)](http://cocoadocs.org/docsets/UAParserSwift)
-
-<p align="center" >Identify Browser, Engine, OS, CPU and Device Type/Model<br/>
-Made with ♥ for Swift Server Side (Kitura, Vapor, Perfect...)
-<p/>
-<p align="center" >★★ <b>Star our github repository to help us!</b> ★★</p>
-<p align="center" >Created by <a href="http://www.danielemargutti.com">Daniele Margutti</a> (<a href="http://www.twitter.com/danielemargutti">@danielemargutti</a>)</p>
-
-### What's UAParserSwift
+<p align="center"><strong>User-Agent Parser based upon ua-parser.js</strong></p>
 
 UAParserSwift is a Swift-based library to parse User Agent string; it's a port of [ua-parser-js](https://github.com/faisalman/ua-parser-js) by Faisal Salman created to be mainly used in Swift Server Side applications ([Kitura](http://kitura.io), [Vapor](https://opencollective.com/vapor) etc.).
 You can however use it on client side, all Apple's platforms are supported (iOS, macOS, tvOS and watchOS).
 
 This library aims to identify detailed type of web browser, layout engine, operating system, cpu architecture, and device type/model, entirely from user-agent string with a relatively small footprint.
 
-### Other Libraries you may like
+## ❤️ Your Support
 
-I'm also working on several other projects you may like.
-Take a look below:
+*Hi fellow developer!*  
+You know, maintaing and developing tools consumes resources and time. While I enjoy making them **your support is foundamental to allow me continue its development**.  
 
-<p align="center" >
+If you are using SwiftLocation or any other of my creations please consider the following options:
 
-| Library         | Description                                      |
-|-----------------|--------------------------------------------------|
-| [**SwiftDate**](https://github.com/malcommac/SwiftDate)       | The best way to manage date/timezones in Swift   |
-| [**Hydra**](https://github.com/malcommac/Hydra)           | Write better async code: async/await & promises  |
-| [**Flow**](https://github.com/malcommac/Flow) | A new declarative approach to table managment. Forget datasource & delegates. |
-| [**SwiftRichString**](https://github.com/malcommac/SwiftRichString) | Elegant & Painless NSAttributedString in Swift   |
-| [**SwiftLocation**](https://github.com/malcommac/SwiftLocation)   | Efficient location manager                       |
-| [**SwiftMsgPack**](https://github.com/malcommac/SwiftMsgPack)    | Fast/efficient msgPack encoder/decoder           |
-</p>
+- [**Make a donation with PayPal**](https://www.paypal.com/paypalme/danielemargutti/20)
+- [**Become a Sponsor**](https://github.com/sponsors/malcommac)
 
+- [Follow Me](https://github.com/malcommac)
 
-### Contents
+## How it works
 
-* [How to use UAParserSwift](#doc)
+* [Introduction](#doc)
 * [Supported Browsers](#browsers)
 * [Supported Devices](#devices)
 * [Supported Engines](#engines)
@@ -50,7 +36,7 @@ Take a look below:
 
 <a name="doc"/>
 
-### How to use UAParserSwift
+## Introduction
 
 Usage of UAParserSwift is pretty simple; just allocate an `UAParser` object along with the `User-Agent` string you want to parse.
 
@@ -78,7 +64,7 @@ Now you can call one of these properties to get parsed data (all properties are 
 
 <a name="browsers"/>
 
-### Supported Browsers
+## Supported Browsers
 
 **Name**:
 ```
@@ -97,7 +83,7 @@ Determined dynamically
 
 <a name="devices"/>
 
-### Supported Devices
+## Supported Devices
 
 **Type**:
 
@@ -119,7 +105,7 @@ Determined dinamically
 
 <a name="engines"/>
 
-### Supported Engines
+## Supported Engines
 
 **Engine**:
 
@@ -133,7 +119,7 @@ Determined dinamically
 
 <a name="oss"/>
 
-### Supported OSs
+## Supported OSs
 
 **Name**:
 ```
@@ -150,7 +136,7 @@ Determined dinamically
 
 <a name="architectures"/>
 
-### Supported Architectures
+## Supported Architectures
 
 **Identifier**:
 ```
@@ -159,17 +145,17 @@ Determined dinamically
 
 <a name="tests"/>
 
-### Unit Tests
+## Unit Tests
 
 Unit Tests are available under the [`Tests`](https://github.com/malcommac/UAParserSwift/tree/master/Tests) directory; actually they are the same tests available for ua-parser-js and all are passed successfully.
 
 <a name="installation"/>
 
-### Installation
+## Installation
 
 This library is written for Swift 4.x.
 
-#### Swift Package Manager - Swift Server Side (Kitura,Vapor...)
+### Swift Package Manager (Vapor or any server side framework)
 
 Meow requires Swift 4.0 or greater to work.
 This is the official way to install packages for Swift Server Side.
@@ -185,9 +171,7 @@ To your target, add the "UAParserSwift" dependency.
 .target(name: "Application", dependencies: ["UAParserSwift", ...])
 ```
 
-
-
-#### Using [CocoaPods](http://cocoapods.org) - Client Side
+### CocoaPods
 
 1.	Add the pod `UAParserSwift` to your [Podfile](http://guides.cocoapods.org/using/the-podfile.html).
 
@@ -196,26 +180,18 @@ pod 'UAParserSwift'
 ```
 Run `pod install` from Terminal, then open your app's `.xcworkspace` file to launch Xcode.
 
-
-
-#### Using [Carthage](https://github.com/Carthage/Carthage) - Client Side
-
-1. Add the `malcommac/UAParserSwift` project to your [Cartfile](https://github.com/Carthage/Carthage/blob/master/Documentation/Artifacts.md#cartfile).
-
-```ogdl
-github "malcommac/UAParserSwift"
-```
-
 <a name="issues"/>
 
-### Issues & Contributions
+## Contributing
 
-Please [open an issue here on GitHub](https://github.com/malcommac/UAParserSwift/issues/new) if you have a problem, suggestion, or other comment.
-Pull requests are welcome and encouraged.
+- If you **need help** or you'd like to **ask a general question**, open an issue.
+- If you **found a bug**, open an issue.
+- If you **have a feature request**, open an issue.
+- If you **want to contribute**, submit a pull request.
 
 <a name="license"/>
 
-### License
+## License
 
 Dual licensed under GPLv2 & MIT
 
@@ -225,3 +201,11 @@ Original [ua-parser-js](http://faisalman.github.io/ua-parser-js) Copyright: Copy
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+This software is licensed under [MIT License](LICENSE.md).
+
+**Consider ❤️ [support the development](#support) of this library!**
+
+***Follow me on:***  
+- 💼 [Linkedin](https://www.linkedin.com/in/danielemargutti/)  
+- 🐦 [Twitter](https://twitter.com/danielemargutti)
