@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "UAParserSwift"
-  s.version      = "1.2.0"
+  s.version      = "1.2.1"
   s.summary      = "User-Agent parser for swift (port of ua-parser-js)"
   s.description  = <<-DESC
     UAParserSwift is a Swift-based library to parse User Agent string; it's a port of ua-parser-js by Faisal Salman created to be mainly used in Swift Server Side applications (but compatible with all Apple's platforms too).
