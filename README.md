@@ -47,7 +47,7 @@ let parser = UAParser(agent: "Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_0 like Mac
 // Parsed data are cached and evaluated lazily in order to
 // get the best performances.
 
-let identified_os = parser.os
+let identified_browser = parser.browser
 let identified_device = parser.device
 let identified_engine = parser.engine
 let identified_os = parser.os
